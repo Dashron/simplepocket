@@ -1,0 +1,21 @@
+{
+  "name": "simplepocket",
+  "version": "0.1.0",
+  "description": "A simple API library for the Pocket API (https://getpocket.com/developer)",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dashron/simplepocket.git"
+  },
+  "keywords": [
+    "api",
+    "pocket",
+    "getpocket"
+  ],
+  "author": "Aaron Hedges",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Dashron/simplepocket/issues"
+  },
+  "homepage": "https://github.com/Dashron/simplepocket#readme"
+}
