@@ -85,17 +85,20 @@ A human readable error message. Useful to log this for debugging.
 
 ### Code
 A unique error code defined by pocket. Useful to log this for debugging.
+
 `console.log(err.code);`
 
 ### Status
 The HTTP status code of the error response. You might be able to gleam some information from this, but the error code will be much more specific.
+
 `console.log(err.status);`
 
 ### Headers
 An object containing all the response headers
+
 `console.log(err.headers);`
 
 # TODO:
-Authentication
-Clean up docs
-Tests
+ - Authentication
+ - Clean up docs
+ - Tests
