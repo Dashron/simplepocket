@@ -10,6 +10,17 @@ Consumer key is required, access token is optional.
 
 # Request
 
+`var return_value = lib.request(path, body, headers);`
+
+**Path** is required, and lines up with the Pocket API's "Method URL". You do not have to include v3 in the path.
+
+**Body** is optional, and should be an object containing all of your request parameters.
+
+**Headers** is optional, and should be an object containing all of your custom request headers.
+
+**Return Value** This function returns a promise. The promise will resolve to a [Response object](#response), or reject with an [HttpResponseError](#httpresponseerror).
+
+
 ```
 var response_promise = lib.request('/get', {
 	favorite: 1
@@ -22,15 +33,6 @@ response_promise.then(function (response) {
 	console.log(err);
 })
 ```
-
-**Path** is required, and lines up with the Pocket API's "Method URL". You do not have to include v3 in the path.
-
-**Body** is optional, and should be an object containing all of your request parameters.
-
-**Headers** is optional, and should be an object containing all of your custom request headers.
-
-**Return Value** This function returns a promise. The promise will resolve to a [Response object](#response), or reject with an [HttpResponseError](#httpresponseerror).
-
 
 # Response
 
