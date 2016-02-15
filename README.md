@@ -29,7 +29,7 @@ response_promise.then(function (response) {
 
 **Headers** is optional, and should be an object containing all of your custom request headers.
 
-**Return Value** This function returns a promise. The promise will resolve to a [Response object](#response), or reject with an [HttpResponseError](#HttpResponseError).
+**Return Value** This function returns a promise. The promise will resolve to a [Response object](#response), or reject with an [HttpResponseError](#httpresponseerror).
 
 
 # Response
@@ -79,21 +79,21 @@ limits.user.reset;
 The HttpResponseError contains important information about why your request failed. For more information about pocket errors, check out their [error page](https://getpocket.com/developer/docs/errors)
 
 ### Message
+A human readable error message. Useful to log this for debugging.
 
 `console.log(err.message);`
 
 ### Code
-
+A unique error code defined by pocket. Useful to log this for debugging.
 `console.log(err.code);`
 
 ### Status
-
+The HTTP status code of the error response. You might be able to gleam some information from this, but the error code will be much more specific.
 `console.log(err.status);`
 
 ### Headers
-
+An object containing all the response headers
 `console.log(err.headers);`
-
 
 # TODO:
 Authentication
